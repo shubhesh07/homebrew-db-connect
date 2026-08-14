@@ -2,11 +2,13 @@
 
 Homebrew tap for [DB Connect](https://github.com/shubhesh07/db-connect) — a free, fast desktop database IDE for **MySQL**, **Amazon Redshift**, and **AWS DynamoDB**.
 
-## Install
+## Install (Recommended)
 
 ```bash
 brew install --cask shubhesh07/db-connect/db-connect
 ```
+
+Homebrew handles the macOS Gatekeeper unblock automatically. Upgrade later with `brew upgrade --cask db-connect`.
 
 Or tap first, then install:
 
@@ -14,8 +16,6 @@ Or tap first, then install:
 brew tap shubhesh07/db-connect
 brew install --cask db-connect
 ```
-
-Homebrew handles the macOS Gatekeeper unblock automatically — no `xattr` step needed.
 
 ## Upgrade
 
