@@ -19,7 +19,7 @@ cask "db-connect" do
   # DB Connect is not notarized with an Apple Developer ID. Clear the macOS
   # quarantine flag so Gatekeeper does not block the first launch with
   # "DBConnect is damaged and can't be opened".
-  postflight_steps do
+  postflight do
     system_command "/usr/bin/xattr",
                    args: ["-cr", "#{appdir}/DBConnect.app"],
                    sudo: false
