@@ -1,6 +1,6 @@
 cask "db-connect" do
-  version "3.3.0"
-  sha256 "d1efa97e67681685a19d562911a7d9ec13fa4b9b9722953dd20854ab396d6105"
+  version "3.4.0"
+  sha256 "0d0829b64478b4bb72fa011d38a29664d2aad2b1df6c2bd191c24004e957872e"
 
   url "https://github.com/shubhesh07/db-connect/releases/download/v#{version}/DBConnect-macOS-v#{version}.dmg",
       verified: "github.com/shubhesh07/db-connect/"
