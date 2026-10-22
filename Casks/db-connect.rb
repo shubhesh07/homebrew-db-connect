@@ -4,7 +4,7 @@ cask "db-connect" do
 
   url "https://github.com/shubhesh07/db-connect/releases/download/v#{version}/DBConnect-macOS-v#{version}.dmg"
   name "DB Connect"
-  desc "Free database IDE for MySQL, PostgreSQL, Amazon Redshift, DynamoDB, Redis and MongoDB"
+  desc "Free database IDE for MySQL, PostgreSQL, Redshift, DynamoDB, Redis, MongoDB and Elasticsearch"
   homepage "https://shubhesh07.github.io/db-connect/"
 
   livecheck do
@@ -19,10 +19,8 @@ cask "db-connect" do
   # DB Connect is not notarized with an Apple Developer ID. Clear the macOS
   # quarantine flag so Gatekeeper does not block the first launch with
   # "DBConnect is damaged and can't be opened".
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/DBConnect.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/DBConnect.app"], must_succeed: false
   end
 
   uninstall quit: "com.shubhesh.dbconnect"
