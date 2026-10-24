@@ -1,10 +1,10 @@
 cask "db-connect" do
-  version "3.7.1"
-  sha256 "d698d99d813b5e6c0b60654503e95347b16c9c19de335db54ca0f7931ced4e7b"
+  version "3.8.0"
+  sha256 "30a9b447458efa45ebb52424300d9ee410f688bcfa4ce8c310ef936465d9e34d"
 
   url "https://github.com/shubhesh07/db-connect/releases/download/v#{version}/DBConnect-macOS-v#{version}.dmg"
   name "DB Connect"
-  desc "Free database IDE for MySQL, PostgreSQL, Redshift, DynamoDB, Redis, MongoDB and Elasticsearch"
+  desc "Free database IDE for MySQL, PostgreSQL, Redshift, DynamoDB, Redis, MongoDB, Elasticsearch and ClickHouse"
   homepage "https://shubhesh07.github.io/db-connect/"
 
   livecheck do
